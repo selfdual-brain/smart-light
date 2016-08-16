@@ -1,0 +1,143 @@
+{
+	"variables": [],
+	"info": {
+		"name": "philips",
+		"_postman_id": "200109e7-64cc-630d-7bc9-81e8a0826d37",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "system/bridges",
+			"request": {
+				"url": "http://localhost:8888/system/bridges",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8888/bridge/B-001",
+			"request": {
+				"url": "http://localhost:8888/bridge/B-001",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8888/bridge/B-001/devices",
+			"request": {
+				"url": "http://localhost:8888/bridge/B-001/devices",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8888/bridge/B-001/reboot",
+			"request": {
+				"url": "http://localhost:8888/bridge/B-001/reboot",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8888/bridge/B-001/light/L-03672178",
+			"request": {
+				"url": "http://localhost:8888/bridge/B-001/light/L-03672178",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8888/bridge/B-001/light/L-03672178/adjust",
+			"request": {
+				"url": "http://localhost:8888/bridge/B-001/light/L-03672178/adjust",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"on\": true,\n    \"brightness\": 21,\n    \"hue\": 0,\n    \"saturation\": 74,\n    \"effect\": \"NONE\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8888/bridge/B-001/light/L-03672178/switch-on",
+			"request": {
+				"url": "http://localhost:8888/bridge/B-001/light/L-03672178/switch-on",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8888/bridge/B-001/light/L-03672178/switch-off",
+			"request": {
+				"url": "http://localhost:8888/bridge/B-001/light/L-03672178/switch-off",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8888/bridge/B-001/sensor/S-40022",
+			"request": {
+				"url": "http://localhost:8888/bridge/B-001/sensor/S-40022",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
