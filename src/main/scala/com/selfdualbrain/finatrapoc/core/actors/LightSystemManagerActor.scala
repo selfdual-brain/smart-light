@@ -13,7 +13,7 @@ import scala.collection.mutable
   * All bridges are childen of this actor.
   */
 class LightSystemManagerActor(bridgeDiscovery: BridgeDiscoveryApi) extends Actor with ActorLogging with EventsBroadcaster {
-  var bridges: mutable.Map[DeviceUniqueId, ActorRef] = new mutable.HashMap[DeviceUniqueId, ActorRef]
+  val bridges: mutable.Map[DeviceUniqueId, ActorRef] = new mutable.HashMap[DeviceUniqueId, ActorRef]
 
   for (deviceInfo <- bridgeDiscovery.discoverAllBridgesInScope)
     createBridgeActor(deviceInfo, bridgeDiscovery.getBridgeInterface(deviceInfo.serialNumber))

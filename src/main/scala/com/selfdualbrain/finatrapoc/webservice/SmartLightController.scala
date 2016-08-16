@@ -362,7 +362,7 @@ class SmartLightController @Inject() (actorSystem: ActorSystem, @Named("root-act
 
     val scalaFutureWithAllCasesHandled: Future[Response] = (futureActorRef flatMap {actorRef => (actorRef ? sendMsg) map responseConverterWithUnexpectedMsgHandling}) recover {
       case ex: ActorNotFound => response.notFound(Webservice.Error(
-        errorCode = "not such resource",
+        errorCode = "not-such-resource",
         description = "the URI pointed to non-existing resource, this is client-side error",
         diagnosticInfo = Some(s"request internally converted to akka actor path: $actorPath, but such actor was not found in the system")
       ))

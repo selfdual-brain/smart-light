@@ -13,8 +13,8 @@ import scala.collection.mutable
   * Corresponds to one "bridge" (hardware device).
   */
 class BridgeActor(val bridgeHardware: BridgeHardwareApi, val info: BridgeInfo) extends Actor with ActorLogging with EventsBroadcaster {
-  var lights: mutable.Map[DeviceUniqueId, ActorRef] = new mutable.HashMap[DeviceUniqueId, ActorRef]
-  var sensors: mutable.Map[DeviceUniqueId, ActorRef] = new mutable.HashMap[DeviceUniqueId, ActorRef]
+  val lights: mutable.Map[DeviceUniqueId, ActorRef] = new mutable.HashMap[DeviceUniqueId, ActorRef]
+  val sensors: mutable.Map[DeviceUniqueId, ActorRef] = new mutable.HashMap[DeviceUniqueId, ActorRef]
 
   //initalization of child actors
   for (device <- bridgeHardware.getAllLights)
