@@ -4,7 +4,7 @@ import com.selfdualbrain.finatrapoc.core.model.DeviceUniqueId
 import com.twitter.finatra.request.RouteParam
 
 /**
-  * Collection of data structures used in webservie API.
+  * Collection of data structures used in webservice API.
   * This is the way we model JSON structure, actually (thanks to the fact that Finatra maps case classes to JSON automatically).
   */
 object Webservice {
