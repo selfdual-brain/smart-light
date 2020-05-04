@@ -3,7 +3,7 @@ package com.selfdualbrain.finatrapoc.core.actors
 import com.selfdualbrain.finatrapoc.core.model.{Color, DeviceUniqueId}
 
 /**
-  * Definition of events broadcasted by light system actors.
+  * Definition of events broadcast by light system actors.
   */
 object LightSystemEvent {
 
